@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'daemons'
+
+options = {
+    :monitor => true,
+    :ontop => false,
+    :multiple => false,
+    :dir_mode => :normal,
+    :dir => '/tmp'
+}
+
+Daemons.run(File.dirname(__FILE__) + '/../lib/newrelic_service_monitor_plugin.rb', options)

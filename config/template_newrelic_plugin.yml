@@ -1,0 +1,21 @@
+# Please make sure to update the license_key information with the license key for your New Relic
+# account.
+#
+#
+newrelic:
+  #
+  # Update with your New Relic account license key:
+  #
+  license_key: 'YOUR_LICENSE_KEY_HERE'
+  #
+  # Set to '1' for verbose output, remove for normal output.
+  #
+  verbose: 0
+#
+# Agent Configuration:
+#
+agents:
+  service_monitor:
+    name: 'Instance or host name'
+    processes:
+      process_name: "status check command"

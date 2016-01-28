@@ -1,0 +1,4 @@
+/Gemfile.lock
+/config/newrelic_plugin.yml
+.idea/
+newrelic_service_monitor_plugin.log
